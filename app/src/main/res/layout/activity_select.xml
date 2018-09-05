@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Chat">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10dip"
+        android:paddingStart="10dip"
+        android:text="@string/comunicacion_de_su_dispositivo_con_modulo_bluetooth"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        android:paddingBottom="5dip"
+        android:paddingEnd="10dip"
+        android:paddingStart="10dip"
+        android:text="@string/nota_para_ver_su_dispositivo_deberia_primero_haber_establecido_conexion"
+        android:textColor="@color/bg"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:text="@string/seleccione_el_dispositivo_que_desee_parear" />
+
+    <me.aflak.pulltorefresh.PullToRefresh
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </me.aflak.pulltorefresh.PullToRefresh>
+
+    <Button
+        android:id="@+id/not_in_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp"
+        android:text="@string/solo_si_no_encontro_su_dispositivo"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:theme="?attr/actionBarTheme" />
+
+    <Button
+        android:id="@+id/bot15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:text="@string/regresar"
+        android:textSize="12sp"
+        android:theme="?attr/actionBarTheme" />
+
+</RelativeLayout>
